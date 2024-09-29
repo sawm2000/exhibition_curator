@@ -189,31 +189,31 @@ You can obtain the API key from the Harvard API website.
 
 ## Installation and Running Locally
 
-### Clone the Repository
+#### Clone the Repository
 
 ```bash
 git clone https://github.com/sawm2000/exhibition_curator.git
 ```
 
-### Navigate to the project directory
+#### Navigate to the project directory
 
 ```bash
 cd exhibition_curator
 ```
 
-### Install Dependencies
+#### Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Seed the Database
+#### Seed the Database
 
 ```bash
 node seed.js
 ```
 
-### Run the server
+#### Run the server
 
 ```bash
 npm start
