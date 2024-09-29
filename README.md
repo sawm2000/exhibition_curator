@@ -2,7 +2,7 @@
 
 ## Description
 
-The ExhibitArt backend serves as the API for the ExhibitArt application. It provides endpoints for liking and storing artworks in collections as well as user registration, login and profile management. This backend is built using Node.js and Express, with MongoDB as the database.
+The exhibitArt backend is the API that supports the exhibitArt application. It offers a comprehensive set of endpoints for managing user interactions, including liking artworks, organizing them into collections, and facilitating user registration, login, and profile management. Built with Node.js, Express and MongoDB.
 
 ## Table of Contents
 
@@ -30,7 +30,7 @@ The ExhibitArt backend serves as the API for the ExhibitArt application. It prov
     }
     ```
 
-    ### User Signin
+### User Signin
 
 - **POST** `/api/auth/signin`
 
@@ -57,7 +57,7 @@ The ExhibitArt backend serves as the API for the ExhibitArt application. It prov
         - `limit`: Number of artworks to return per page.
         - `page`: Page number for pagination.
 
-    s ### View Single Artwork
+### View Single Artwork
 
 - **GET** `/api/art/:artId`
 
@@ -66,7 +66,7 @@ The ExhibitArt backend serves as the API for the ExhibitArt application. It prov
 
     - `artId`: ID of the artwork to retrieve.
 
-    ### Update User
+### Update User
 
 - **PUT** `/api/user/:id`
 
@@ -82,7 +82,7 @@ The ExhibitArt backend serves as the API for the ExhibitArt application. It prov
       "img": "string"
     }
     ```
-    ### Get User Profile
+### Get User Profile
 
 - **GET** `/api/user/:id`
   - **Description**: Retrieves user profile information.
