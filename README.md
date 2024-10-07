@@ -2,7 +2,7 @@
 
 ## Description
 
-The exhibitArt backend is the API that supports the exhibitArt application. It offers a comprehensive set of endpoints for managing user interactions, including liking artworks, organizing them into collections, and facilitating user registration, login, and profile management. Built with Node.js, Express and MongoDB.
+The exhibitArt backend is the API that supports the exhibitArt application. It offers a comprehensive set of endpoints for managing user interactions, including liking artworks, organizing them into collections, and facilitating user registration, login, and profile management. Built with Node.js, Express and MongoDB. The backend integrates data from the Harvard Art Museum API and the Metropolitan Museum of Art API to provide the user with a diverse range of artworks. 
 
 ## Table of Contents
 
