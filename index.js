@@ -35,6 +35,10 @@ app.use((err, req, res, next) => {
   });
 });
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 app.listen(8800, () => {
   connect();
   console.log("Connected to Server");
