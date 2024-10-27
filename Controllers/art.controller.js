@@ -34,6 +34,7 @@ export const search = async (req, res, next) => {
       dimensions:
         item.content?.indexedStructured?.physicalDescription || "Unknown",
       culture: item.content?.indexedStructured?.culture || "Unknown",
+      period:  item.content?.indexedStructured?.period || "Unknown",
       imageUrl:
         item.content?.descriptiveNonRepeating?.online_media?.media?.[0]
           ?.content ||
