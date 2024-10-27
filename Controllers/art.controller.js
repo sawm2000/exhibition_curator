@@ -106,6 +106,7 @@ export const viewArtPiece = async (req, res, next) => {
           dimensions:
             item.content?.indexedStructured?.physicalDescription || "Unknown",
           culture: item.content?.indexedStructured?.culture || "Unknown",
+          period:  item.content?.indexedStructured?.period || "Unknown",
           imageUrl:
             item.content?.descriptiveNonRepeating?.online_media?.media?.[0]
               ?.content ||
@@ -130,6 +131,7 @@ export const viewArtPiece = async (req, res, next) => {
             medium: object.medium || "Unknown",
             dimensions: object.dimensions || "Unknown",
             culture: object.culture || "Unknown",
+            period: object.period || "Unknown",
             imageUrl:
               object.primaryimageurl ||
               "https://dummyimage.com/150x150/cccccc/ffffff&text=No+Image",
