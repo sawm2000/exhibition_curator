@@ -12,6 +12,9 @@ export const search = async (req, res, next) => {
     const { search, sortBy = "title", orderBy = "asc" } = req.query;
     let { limit = 10, page = 1 } = req.query;
 
+    limit = parseInt(limit);
+    page = parseInt(page);
+
     const smithsonianAPI = `https://api.si.edu/openaccess/api/v1.0/search?q=${search}&api_key=${SAPI}`;
     const harvardMuseumAPI = `https://api.harvardartmuseums.org/object?apikey=${API}&q=title:${search}`;
 
@@ -156,7 +159,10 @@ export const viewAllArt = async (req, res, next) => {
   try {
     const { sortBy = "title", orderBy = "asc" } = req.query;
     let { limit = 10, page = 1 } = req.query;
-    
+
+    limit = parseInt(limit);
+    page = parseInt(page);
+
     const smithsonianAPI = `https://api.si.edu/openaccess/api/v1.0/search?q=*:*&api_key=${SAPI}`;
     const smithsonianResponse = await axios.get(smithsonianAPI);
     const smithsonianArtworks = (
