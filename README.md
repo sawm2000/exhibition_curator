@@ -2,7 +2,7 @@
 
 ## Description
 
-The exhibitArt backend is the API that supports the exhibitArt application. It offers a comprehensive set of endpoints for managing user interactions, including liking artworks, organizing them into collections, and facilitating user registration, login, and profile management. Built with Node.js, Express and MongoDB. The backend integrates data from the Harvard Art Museum API and the Metropolitan Museum of Art API to provide the user with a diverse range of artworks. 
+The exhibitArt backend is the API that supports the exhibitArt application. It offers a comprehensive set of endpoints for managing user interactions, including liking artworks, organizing them into collections, and facilitating user registration, login, and profile management. Built with Node.js, Express and MongoDB. The backend integrates data from the Harvard Art Museum API and the Smithsonian Institution API to provide the user with a diverse range of artworks. 
 
 ## Table of Contents
 
@@ -185,7 +185,11 @@ MONGO=your_mongodb_connection_string_here
 API=your-harvard-api-key
 ```
 
-You can obtain the API key from the Harvard API website.
+```plaintext
+SAPI=your-smithsonian-api-key
+```
+
+You can obtain the API keys from the Harvard API website and the Smithsonian APi website.
 
 ## Installation and Running Locally
 
@@ -205,12 +209,6 @@ cd exhibition_curator
 
 ```bash
 npm install
-```
-
-#### Seed the Database
-
-```bash
-node seed.js
 ```
 
 #### Run the server

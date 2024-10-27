@@ -20,8 +20,7 @@ const userSchema = new mongoose.Schema({
   },
   likes: [
     {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Art",
+      type: String,
     },
   ],
   collections: [
@@ -32,8 +31,7 @@ const userSchema = new mongoose.Schema({
       },
       artworks: [
         {
-          type: mongoose.Schema.Types.ObjectId,
-          ref: "Art",
+          type: String,
         },
       ],
     },
