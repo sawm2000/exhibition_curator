@@ -66,6 +66,18 @@ The exhibitArt backend is the API that supports the exhibitArt application. It o
 
     - `artId`: ID of the artwork to retrieve.
 
+### View all artwork
+
+- **GET** `/api/art`
+
+  - **Description**: Retrives and sorts artworks.
+  - **Query Parameters**:
+  - 
+        - `sortBy`: Criteria to sort the results by, e.g., date, title, or artist.
+        - `orderBy`: Order of sorting. Use asc for ascending and desc for descending order.
+        - `limit`: Number of artworks to return per page.
+        - `page`: Page number for pagination.
+    
 ### Update User
 
 - **PUT** `/api/user/:id`
